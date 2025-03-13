@@ -3,8 +3,6 @@
     "env": {
       "COMPOSER_ALLOW_SUPERUSER": "1"
     },
-    "commands": {
-      "build": "composer install --optimize-autoloader --no-dev && npm run build"
-    }
+    "buildCommand": "composer install --optimize-autoloader --no-dev && npm run build"
   }
 }
