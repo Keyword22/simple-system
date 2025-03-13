@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "framework": "other",
+    "framework": "vite",
     "functions": {
         "api/*.php": {
             "runtime": "vercel-php@0.6.0"
