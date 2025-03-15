@@ -35,4 +35,10 @@ export interface User {
     updated_at: string;
 }
 
+interface PageProps {
+    currentLocale: string;
+    [key: string]: any;
+  }
+  
+
 export type BreadcrumbItemType = BreadcrumbItem;
