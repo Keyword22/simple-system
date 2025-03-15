@@ -1,6 +1,8 @@
 import vue from '@vitejs/plugin-vue';
 import autoprefixer from 'autoprefixer';
 import laravel from 'laravel-vite-plugin';
+import Components from 'unplugin-vue-components/vite';
+import {PrimeVueResolver} from '@primevue/auto-import-resolver';
 import path from 'path';
 import tailwindcss from 'tailwindcss';
 import { resolve } from 'node:path';
@@ -21,6 +23,11 @@ export default defineConfig({
                 },
             },
         }),
+        Components({
+            resolvers: [
+                PrimeVueResolver()
+            ]
+        })
     ],
     resolve: {
         alias: {

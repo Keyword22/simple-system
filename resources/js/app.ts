@@ -8,8 +8,11 @@ import PrimeVue from 'primevue/config';
 import Aura from '@primeuix/themes/aura';
 import { ZiggyVue } from 'ziggy-js';
 import { initializeTheme } from './composables/useAppearance';
+import 'primeicons/primeicons.css'
 
 // Extend ImportMeta interface for Vite...
+
+//@ts-expect-error
 declare module 'vite/client' {
     interface ImportMetaEnv {
         readonly VITE_APP_NAME: string;
@@ -33,7 +36,10 @@ createInertiaApp({
             .use(ZiggyVue)
             .use(PrimeVue, {
                 theme: {
-                    preset: Aura
+                    preset: Aura,
+                    options: {
+                        darkModeSelector: '.dark',
+                    }
                 }
             })
             .mount(el);
