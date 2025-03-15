@@ -11,6 +11,8 @@ import { initializeTheme } from './composables/useAppearance';
 import 'primeicons/primeicons.css'
 
 // Extend ImportMeta interface for Vite...
+
+//@ts-expect-error
 declare module 'vite/client' {
     interface ImportMetaEnv {
         readonly VITE_APP_NAME: string;

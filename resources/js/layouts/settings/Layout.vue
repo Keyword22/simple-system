@@ -22,6 +22,7 @@ const sidebarNavItems: NavItem[] = [
 
 const page = usePage();
 
+//@ts-expect-error
 const currentPath = page.props.ziggy?.location ? new URL(page.props.ziggy.location).pathname : '';
 </script>
 
