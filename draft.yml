@@ -1,0 +1,6 @@
+models:
+  NewsletterRecipients:
+    email: string:255
+    name: string:100 nullable
+    subscribed_at: timestamp
+    unsubscribed_at: nullable timestamp

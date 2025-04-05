@@ -10,5 +10,6 @@ declare module 'vue' {
   export interface GlobalComponents {
     Checkbox: typeof import('primevue/checkbox')['default']
     FloatLabel: typeof import('primevue/floatlabel')['default']
+    Toast: typeof import('primevue/toast')['default']
   }
 }

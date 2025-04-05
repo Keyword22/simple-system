@@ -9,6 +9,7 @@ import Aura from '@primeuix/themes/aura';
 import { ZiggyVue } from 'ziggy-js';
 import { initializeTheme } from './composables/useAppearance';
 import 'primeicons/primeicons.css'
+import ToastService from 'primevue/toastservice';
 
 // Extend ImportMeta interface for Vite...
 
@@ -42,6 +43,7 @@ createInertiaApp({
                     }
                 }
             })
+            .use(ToastService)
             .mount(el);
     },
     progress: {
