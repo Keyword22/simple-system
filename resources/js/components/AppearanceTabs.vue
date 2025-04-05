@@ -13,7 +13,6 @@ const { appearance, updateAppearance } = useAppearance();
 const tabs = [
     { value: 'light', Icon: Sun, label: 'Light' },
     { value: 'dark', Icon: Moon, label: 'Dark' },
-    { value: 'system', Icon: Monitor, label: 'System' },
 ] as const;
 </script>
 
