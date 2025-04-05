@@ -7,6 +7,7 @@ use App\Http\Controllers\Content\PostController;
 use App\Models\Post;
 use App\Http\Controllers\NewsletterController;
 
+
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'featuredPosts' => Post::latest()
@@ -24,6 +25,7 @@ Route::get('dashboard', function () {
 Route::post('/locale', [LocaleController::class, 'update'])->name('locale.update');
 
 Route::post('/newsletter/subscribe', [NewsletterController::class, 'subscribe'])->name('newsletter.subscribe');
+
 
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';

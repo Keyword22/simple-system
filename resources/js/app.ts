@@ -11,7 +11,6 @@ import { initializeTheme } from './composables/useAppearance';
 import 'primeicons/primeicons.css'
 import ToastService from 'primevue/toastservice';
 
-
 // Extend ImportMeta interface for Vite...
 
 //@ts-expect-error

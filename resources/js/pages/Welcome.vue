@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 import { Head, Link, useForm } from '@inertiajs/vue3';
 import { Button, Card, Message, Skeleton, Toast } from 'primevue';
 import GuestLayout from '@/layouts/GuestLayout.vue';
@@ -37,6 +38,7 @@ const subscribe = () => {
     <Head title="Welcome">
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     </Head>
+
 
     <Toast />
 
